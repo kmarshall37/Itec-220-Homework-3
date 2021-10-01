@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Calculation Form</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <script src="https://kit.fontawesome.com/4ff909f9b3.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8"/>
+  </head>
+
+  <body>
+	<div>
+       <form id="force" name="force" action="index.html" method="get" target="_self">
+         <h2>Compute Force In Newtons</h2>
+         <br><br>
+         <label for="inputMass">Mass:</label>
+         <input type="text" name="inputMass" id="inputMass" placeholder="Mass"/>
+         <br>
+         <label for="inputAcceleration">Acceleration:</label>
+         <input type="text" name="inputAcceleration" id="inputAcceleration" placeholder="Acceleration"/>
+
+		  <input type="button" id="computeForce" name="computeForce" value="Calculate Force" onclick="click" />
+	    </form>
+      <br>
+      <p id="displayForce"></p>
+	</div>
+
+  <br><br><br><br>
+
+  <div>
+      <form id="averageVelocity" name="averageVelocity" action="index.html" method="get" target="_self">
+          <h2>Compute Average Velocity</h2>
+          <br><br>
+          <label for="initialVelocity">Initial Velocity:</label>
+          <input type="text" name="initialVelocity" id="initialVelocity" placeholder="initialVelocity"/>
+          <br>
+          <label for="inputTime">Time:</label>
+          <input type="text" name="inputTime" id="inputTime" placeholder="Time"/>
+          <br>
+          <label for="inputAcceleration1">Acceleration:</label>
+          <input type="text" name="inputAcceleration1" id="inputAcceleration1" placeholder="Acceleration"/>
+          <br>
+
+      <input type="button" id="computeAvgVelocity" name="computeAvgVelocity" value="Calulate Average Velocity" onclick="click" />
+      </form>
+      <p id="displayAvgVelocity"></p>
+  </div>
+
+  <br><br><br><br>
+
+  <div>
+      <form id="Quadratic" name="Quadratic" action="index.html" method="get" target="_self">
+          <h2>Compute Quadratic Formula</h2>
+          <br><br>
+          <label for="inputA">Side A:</label>
+          <input type="text" name="inputA" id="inputA" placeholder="Side A"/>
+          <br>
+          <label for="inputB">Side B:</label>
+          <input type="text" name="inputB" id="inputB" placeholder="Side B"/>
+          <br>
+          <label for="inputC">Side C:</label>
+          <input type="text" name="inputC" id="inputC" placeholder="Side C"/>
+          <br>
+
+        <input type="button" id="computeQuadratic" name="computeQuadratic" value="Calculate Quadratic Formula" onclick="click" />
+      </form>
+      <p id="displayQuadratic"></p>
+  </div>
+
+  <br><br><br>
+
+  <div>
+      <form id="Annuity" name="Annuity" action="index.html" method="get" target="_self">
+          <h2>Compute Present Value of Annuity</h2>
+          <br><br>
+          <label for="inputPMT">Dollar Ammount</label>
+          <input type="text" name="inputPMT" id="inputPMT" placeholder="Dollar Ammount of Each Payment" />
+          <br>
+          <label for="inputR">Interest Rate:</label>
+          <input type="text" name="inputR" id="inputR" placeholder="Interest Rate" />
+          <br>
+          <label for="inputN">Number of Periods</label>
+          <input type="text" name="inputN" id="inputN" placeholder="Number of Periods"/>
+          <br>
+
+        <input type="button" id="computeAnnuity" name="computeAnnuity" value="Calculate Present Value of Annuity" onclick="click" />
+      </form>
+      <p id="displayAnnuity"></p>
+  </div>
+<br><br>
+
+<div>
+  <i class="fas fa-code"></i>
+</div>
+
+
+	<script src="./js/script.js"> </script>
+  </body>
+  </html>
